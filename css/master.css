@@ -1,0 +1,230 @@
+/* Start Variables */
+:root {
+  --Pale-Blue: hsl(225, 100%, 94%);
+  --Bright-Blue: hsl(245, 75%, 52%);
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  --Desaturated-Blue: hsl(224, 23%, 55%);
+  --Dark-Blue: hsl(223, 47%, 23%);
+  --Font-Size-Paragraph: 16px;
+}
+/* Start Global Rules */
+-webkit-box-sizing: border-box;
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Pale-Blue);
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+@media (min-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+  width: 100%;
+  padding-top: 50px;
+}
+@media (max-width: 375px) {
+  header .container .image img {
+    width: 325px;
+  }
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header .container .image {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+header .container .image img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+/* End Header */
+/* Start Order */
+.order {
+  width: 100%;
+  padding-top: 0;
+  margin-top: -5px;
+}
+.order .container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  max-width: 420px;
+  background-color: white;
+  padding-top: 15px;
+}
+.order .container h3 {
+  font-weight: 900;
+  font-size: 25px;
+}
+.order .container p {
+  font-size: var(--Font-Size-Paragraph);
+  line-height: 2;
+  padding: 0 75px;
+}
+@media (max-width: 375px) {
+  .order .container {
+    width: 295px;
+  }
+  .order .container p {
+    padding: 0 27px;
+  }
+}
+/* End Order */
+/* Start Plan */
+.plan {
+  width: 100%;
+  padding-top: 0;
+  margin-top: -5px;
+}
+.plan .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  max-width: 420px;
+  background-color: white;
+  padding-top: 15px;
+}
+.plan .container .BG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  background: var(--Very-Pale-Blue);
+  border-radius: 10px;
+}
+.plan .container .BG img {
+  position: absolute;
+  left: 20%;
+}
+@media (max-width: 375px) {
+  .plan .container {
+    max-width: 295px;
+  }
+  .plan .container .BG {
+    width: 290px;
+    margin-left: 0;
+  }
+  .plan .container .BG img {
+    left: 10%;
+  }
+}
+.plan .container .BG .contain {
+  position: relative;
+}
+.plan .container .BG .contain h4 {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.plan .container .BG .contain p {
+  font-size: var(--Font-Size-Paragraph);
+  margin-top: 0;
+  padding-top: 7px;
+}
+.plan .container .BG a {
+  font-weight: 900;
+  position: absolute;
+  left: 69%;
+}
+.plan .container .BG a:hover {
+  color: var(--Desaturated-Blue);
+  text-decoration: none;
+}
+/* End Plan */
+/* Start Pay */
+.pay {
+  width: 100%;
+  padding-top: 0;
+  margin-top: -5px;
+}
+.pay .container {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  max-width: 420px;
+  background-color: white;
+  padding-top: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+@media (max-width: 375px) {
+  .pay .container {
+    max-width: 295px;
+    bottom: 15px;
+  }
+}
+.pay .container button {
+  width: 300px;
+  height: 50px;
+  background-color: var(--Bright-Blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border-style: hidden;
+  box-shadow: 0 20px 5px 0 var(--Pale-Blue);
+}
+.pay .container button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+.pay .container a {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: var(--Desaturated-Blue);
+  font-weight: 900;
+}
+.pay .container a:hover {
+  color: var(--Dark-Blue);
+}
+/* End Pay */
