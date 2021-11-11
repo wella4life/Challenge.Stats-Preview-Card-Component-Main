@@ -1,12 +1,14 @@
 /* Start Variables */
 :root {
-  --Pale-Blue: hsl(225, 100%, 94%);
-  --Bright-Blue: hsl(245, 75%, 52%);
-  --Very-Pale-Blue: hsl(225, 100%, 98%);
-  --Desaturated-Blue: hsl(224, 23%, 55%);
-  --Dark-Blue: hsl(223, 47%, 23%);
-  --Font-Size-Paragraph: 16px;
+  --Very-Dark-Blue: hsl(223, 47%, 7%);
+  --Dark-Desaturated-Blue: hsl(244, 30%, 16%);
+  --Soft-Violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slight-Transparent-White: hsl(0, 0%, 100%, 0.75);
+  --Slighter-Transparent-White: hsl(0, 0%, 100%, 0.6);
+  --Font-Size: 15px;
 }
+/* End Variables */
 /* Start Global Rules */
 -webkit-box-sizing: border-box;
 * {
@@ -20,8 +22,7 @@ html {
   transition: 0.5s;
 }
 body {
-  font-family: "Red Hat Display", sans-serif;
-  background-color: var(--Pale-Blue);
+  font-family: "Inter", "Lexend Deca", sans-serif;
 }
 ul {
   list-style: none;
@@ -35,196 +36,51 @@ ul {
   margin: auto;
 }
 @media (max-width: 375px) {
-  body {
-    background-image: url(../images/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 }
 @media (min-width: 376px) {
-  body {
-    background-image: url(../images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 }
 /* End Global Rules */
-/* Start Header */
-header {
-  width: 100%;
-  padding-top: 50px;
+/* Start Code */
+.background {
 }
-@media (max-width: 375px) {
-  header .container .image img {
-    width: 325px;
-  }
+.background img {
 }
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.background .small-background {
 }
-header .container .image {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+.background .small-background img {
 }
-header .container .image img {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+.background .small-background .container {
 }
-/* End Header */
-/* Start Order */
-.order {
-  width: 100%;
-  padding-top: 0;
-  margin-top: -5px;
+.background .small-background .container .left {
 }
-.order .container {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  max-width: 420px;
-  background-color: white;
-  padding-top: 15px;
+.background .small-background .container .left .head {
 }
-.order .container h3 {
-  font-weight: 900;
-  font-size: 25px;
+.background .small-background .container .left .head h1 {
 }
-.order .container p {
-  font-size: var(--Font-Size-Paragraph);
-  line-height: 2;
-  padding: 0 75px;
+.background .small-background .container .left .head p {
 }
-@media (max-width: 375px) {
-  .order .container {
-    width: 295px;
-  }
-  .order .container p {
-    padding: 0 27px;
-  }
+.background .small-background .container .left .numbers {
 }
-/* End Order */
-/* Start Plan */
-.plan {
-  width: 100%;
-  padding-top: 0;
-  margin-top: -5px;
+.background .small-background .container .left .numbers .one {
 }
-.plan .container {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  text-align: center;
-  max-width: 420px;
-  background-color: white;
-  padding-top: 15px;
+.background .small-background .container .left .numbers .one h2 {
 }
-.plan .container .BG {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  margin-left: 35px;
-  margin-bottom: 20px;
-  background: var(--Very-Pale-Blue);
-  border-radius: 10px;
+.background .small-background .container .left .numbers .one p {
 }
-.plan .container .BG img {
-  position: absolute;
-  left: 20%;
+.background .small-background .container .left .numbers .two {
 }
-@media (max-width: 375px) {
-  .plan .container {
-    max-width: 295px;
-  }
-  .plan .container .BG {
-    width: 290px;
-    margin-left: 0;
-  }
-  .plan .container .BG img {
-    left: 10%;
-  }
+.background .small-background .container .left .numbers .two h2 {
 }
-.plan .container .BG .contain {
-  position: relative;
+.background .small-background .container .left .numbers .two p {
 }
-.plan .container .BG .contain h4 {
-  font-weight: 900;
-  font-size: 16px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.background .small-background .container .left .numbers .three {
 }
-.plan .container .BG .contain p {
-  font-size: var(--Font-Size-Paragraph);
-  margin-top: 0;
-  padding-top: 7px;
+.background .small-background .container .left .numbers .three h2 {
 }
-.plan .container .BG a {
-  font-weight: 900;
-  position: absolute;
-  left: 69%;
+.background .small-background .container .left .numbers .three p {
 }
-.plan .container .BG a:hover {
-  color: var(--Desaturated-Blue);
-  text-decoration: none;
+.background .small-background .container .right {
 }
-/* End Plan */
-/* Start Pay */
-.pay {
-  width: 100%;
-  padding-top: 0;
-  margin-top: -5px;
+.background .small-background .container .right img {
 }
-.pay .container {
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  text-align: center;
-  max-width: 420px;
-  background-color: white;
-  padding-top: 15px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-@media (max-width: 375px) {
-  .pay .container {
-    max-width: 295px;
-    bottom: 15px;
-  }
-}
-.pay .container button {
-  width: 300px;
-  height: 50px;
-  background-color: var(--Bright-Blue);
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  border-style: hidden;
-  box-shadow: 0 20px 5px 0 var(--Pale-Blue);
-}
-.pay .container button:hover {
-  cursor: pointer;
-  opacity: 70%;
-}
-.pay .container a {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-decoration: none;
-  color: var(--Desaturated-Blue);
-  font-weight: 900;
-}
-.pay .container a:hover {
-  color: var(--Dark-Blue);
-}
-/* End Pay */
+/* End Code */
