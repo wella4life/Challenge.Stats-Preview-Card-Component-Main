@@ -23,6 +23,7 @@ html {
 }
 body {
   font-family: "Inter", "Lexend Deca", sans-serif;
+  background-color: var(--Very-Dark-Blue);
 }
 ul {
   list-style: none;
@@ -41,46 +42,113 @@ ul {
 }
 /* End Global Rules */
 /* Start Code */
-.background {
+.small-background {
+  background-color: var(--Dark-Desaturated-Blue);
+  max-width: 1220px;
+  max-height: 740px;
+  margin: auto;
+  margin-top: 12%;
+  border-radius: 10px;
 }
-.background img {
+.small-background .container {
+  display: grid;
+  grid-template-columns: auto auto;
 }
-.background .small-background {
+.small-background .container .left {
+  margin-left: -65px;
 }
-.background .small-background img {
+.small-background .container .left .head {
+  text-align: left;
+  color: var(--White);
+  margin: 65px 120px 0;
+  padding-right: 75px;
 }
-.background .small-background .container {
+.small-background .container .left .head h1 {
+  line-height: 1.4;
+  font-weight: 900;
+  font-size: 35px;
 }
-.background .small-background .container .left {
+.small-background .container .left .head h1 span {
+  color: var(--Soft-Violet);
 }
-.background .small-background .container .left .head {
+.small-background .container .left .head p {
+  font-size: var(--Font-Size);
+  line-height: 1.8;
+  word-spacing: 3px;
+  color: var(--Slighter-Transparent-White);
 }
-.background .small-background .container .left .head h1 {
+
+.small-background .container .left .numbers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  width: 400px;
+  left: 95px;
+  top: 30px;
+  position: relative;
 }
-.background .small-background .container .left .head p {
+.small-background .container .left .numbers .one h2 {
+  color: white;
 }
-.background .small-background .container .left .numbers {
+.small-background .container .left .numbers .one p {
+  color: white;
+  margin-top: -10px;
+  font-size: var(--Font-Size);
+  color: var(--Slighter-Transparent-White);
+  font-size: 12px;
+  font-family: "Lexend Deca";
+  letter-spacing: 1.5px;
 }
-.background .small-background .container .left .numbers .one {
+.small-background .container .left .numbers .two h2 {
+  color: white;
 }
-.background .small-background .container .left .numbers .one h2 {
+.small-background .container .left .numbers .two p {
+  color: white;
+  margin-top: -10px;
+  font-size: var(--Font-Size);
+  color: var(--Slighter-Transparent-White);
+  font-size: 12px;
+  font-family: "Lexend Deca";
+  letter-spacing: 1.5px;
 }
-.background .small-background .container .left .numbers .one p {
+.small-background .container .left .numbers .three h2 {
+  color: white;
 }
-.background .small-background .container .left .numbers .two {
+.small-background .container .left .numbers .three p {
+  color: white;
+  margin-top: -10px;
+  font-size: var(--Font-Size);
+  color: var(--Slighter-Transparent-White);
+  font-size: 12px;
+  font-family: "Lexend Deca";
+  letter-spacing: 1.5px;
 }
-.background .small-background .container .left .numbers .two h2 {
+.small-background .container .right {
+  margin-right: -15px;
+  margin-bottom: -3px;
 }
-.background .small-background .container .left .numbers .two p {
+.small-background .container .right img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.background .small-background .container .left .numbers .three {
+.small-background .container .right p:first-of-type {
+  background-color: var(--Soft-Violet);
+  height: 446px;
+  width: 540px;
+  position: absolute;
+  top: 157px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 50%;
 }
-.background .small-background .container .left .numbers .three h2 {
-}
-.background .small-background .container .left .numbers .three p {
-}
-.background .small-background .container .right {
-}
-.background .small-background .container .right img {
+.small-background .container .right p:last-of-type {
+  background-color: var(--Dark-Desaturated-Blue);
+  height: 446px;
+  width: 540px;
+  position: absolute;
+  top: 157px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 30%;
 }
 /* End Code */
