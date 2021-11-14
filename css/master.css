@@ -126,14 +126,19 @@ ul {
 .small-background .container .right {
   margin-right: -15px;
   margin-bottom: -3px;
+  width: 540px;
+  height: 447px;
 }
-.small-background .container .right img {
+.small-background .container .right .image {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  background-image: url(../images/image-header-desktop.jpg);
+  width: 540px;
+  height: 444px;
 }
 .small-background .container .right p:first-of-type {
   background-color: var(--Soft-Violet);
-  height: 446px;
+  height: 444px;
   width: 540px;
   position: absolute;
   top: 157px;
@@ -143,12 +148,45 @@ ul {
 }
 .small-background .container .right p:last-of-type {
   background-color: var(--Dark-Desaturated-Blue);
-  height: 446px;
+  height: 444px;
   width: 540px;
   position: absolute;
   top: 157px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: 30%;
+}
+@media (max-width: 375px) {
+  .small-background .container .right {
+    padding-left: 20px;
+  }
+  .small-background .container .right .image {
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: 380px;
+    background-repeat: no-repeat;
+  }
+  .small-background .container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .small-background .container .right p:first-of-type {
+    height: 280px;
+    width: 380px;
+    position: absolute;
+    left: 35px;
+    top: 28px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .small-background .container .right p:last-of-type {
+    height: 280px;
+    width: 380px;
+    position: absolute;
+    left: 35px;
+    top: 28px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 /* End Code */
