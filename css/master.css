@@ -124,34 +124,40 @@ ul {
   letter-spacing: 1.5px;
 }
 .small-background .container .right {
-  margin-right: -15px;
-  margin-bottom: -3px;
+  position: relative;
   width: 540px;
   height: 447px;
 }
 .small-background .container .right .image {
+  position: absolute;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-image: url(../images/image-header-desktop.jpg);
-  width: 540px;
-  height: 444px;
+  width: 100%;
+  height: calc(100% - 1px);
+  margin-left: 13px;
+}
+.small-background .container .right p {
+  position: absolute;
 }
 .small-background .container .right p:first-of-type {
   background-color: var(--Soft-Violet);
-  height: 444px;
-  width: 540px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 157px;
+  top: -16px;
+  left: 13px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: 50%;
 }
 .small-background .container .right p:last-of-type {
   background-color: var(--Dark-Desaturated-Blue);
-  height: 444px;
-  width: 540px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 157px;
+  top: -16px;
+  left: 13px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: 30%;
@@ -173,7 +179,6 @@ ul {
   .small-background .container .right p:first-of-type {
     height: 280px;
     width: 380px;
-    position: absolute;
     left: 35px;
     top: 28px;
     border-top-right-radius: 0;
