@@ -1,6 +1,6 @@
 - Overview:
   - [Order Summary Component](#the-challenge)
-  - [https://wella4life.github.io/Challenge.Order-Summary-Component/](#links)
+  - [(https://wella4life.github.io/Challenge_2_Easy/)](#links)
   - ![](images/Finished-Desktop.png)
 
  - Users should be able to:
