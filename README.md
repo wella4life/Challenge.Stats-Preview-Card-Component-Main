@@ -1,5 +1,5 @@
 - Overview:
-  - [Order Summary Component](#the-challenge)
+  - [Stats Preview Card Component](#the-challenge)
   - [https://wella4life.github.io/Challenge_2_Easy/](#links)
   - ![](images/Finished-Desktop.png)
 
