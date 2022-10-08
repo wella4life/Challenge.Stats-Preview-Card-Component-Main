@@ -1,6 +1,6 @@
 - Overview:
-  - [Stats Preview Card Component](#the-challenge)
-  - [https://wella4life.github.io/Challenge_2_Easy/](#links)
+  - [Stats Preview Card Component]
+  - [https://wella4life.github.io/Challenge_2_Easy/]
   - ![](images/Finished-Desktop.png)
 
  - Users should be able to:
